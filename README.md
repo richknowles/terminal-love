@@ -32,7 +32,7 @@
 ## 🖼️ Screenshot
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/richknowles/terminal-love/main/docs/screenshot.png" alt="Terminal Love splash screen preview" width="700">
+  <img src="https://raw.githubusercontent.com/richknowles/terminal-love/main/images/screenshot.jpg" alt="Terminal Love splash screen preview" width="700">
 </p>
 
 ## 🔄 Updating & Removal
