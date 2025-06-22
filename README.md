@@ -1,6 +1,9 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/richknowles/terminal-love/main/images/graphic.png" alt="banner" width="300">
 </p>
+
+---
+
 # 💻 Terminal Love
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/richknowles/terminal-love)
