@@ -19,45 +19,28 @@
 🛬 Countdown until touchdown (and days since connection)
 💖 Designed for terminal sweethearts, sysadmins, and romantics with root
 
-## 📦 Installation
+## 🚀 Quick Start
 
-### 🐧 Linux (Debian/Ubuntu)
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/richknowles/terminal-love/main/install_terminal_love.sh)"
 
-1. **Clone the repo**  
-   ```bash
-      git clone https://github.com/richknowles/terminal-love.git
-      cd terminal-love/terminal-love-linux
-      chmod +x install.sh
-      ./install.sh
+## 🛠️ Manual Install
 
-### 🍎 Installation (macOS)
-Double-click the signed .pkg file found in:
-   ```bash
-      terminal-love/terminal-love-mac/terminal-love.pkg
+1. `git clone https://github.com/richknowles/terminal-love.git ~/build/terminal-love`  
+2. Run `./install_terminal_love.sh` and follow the prompts.  
+3. Edit `~/build/terminal-love/terminal-love.conf` to tweak colours, timers or features.  
 
-### Note: If macOS complains about system volume write, use the manual version:
-    ```bash
-       sudo cp terminal-love-mac/payload/usr/local/bin/*.sh /usr/local/bin/
+## 🖼️ Screenshot
 
-### Shell Config
-And add this line to your shell config (~/.zshrc, ~/.bashrc, etc.):
-```bash
-[ -x /usr/local/bin/terminal-love.sh ] && /usr/local/bin/terminal-love.sh
+<p align="center">
+  <img src="https://raw.githubusercontent.com/richknowles/terminal-love/main/docs/screenshot.png" alt="Terminal Love splash screen preview" width="700">
+</p>
 
->Note: The installer auto-adds to your shell config:
+## 🔄 Updating & Removal
 
-~/.bashrc for Bash
-~/.zshrc for Zsh
-~/.config/fish/config.fish for F
+- Update: `~/build/terminal-love/update_terminal_love.sh`  
+- Remove: `~/build/terminal-love/uninstall_terminal_love.sh`  
 
-### 🔥 Uninstall
-```bash
-sudo rm /usr/local/bin/terminal-love.sh
-sudo rm /usr/local/bin/terminal-love-network.sh
-# And remove the launch line from your shell config
-
-### !Pro Tip!
->Use this as your own terminal landing page—add more ASCII, quotes, weather feeds, or private status widgets.
+---
 
 ### 🧠 Rich Knowles
 GitHub: @richknowles
