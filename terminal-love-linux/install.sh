@@ -14,8 +14,8 @@ sudo rm -f /usr/bin/terminal-love.sh /usr/bin/terminal-love-network.sh 2>/dev/nu
 
 # Copy new files
 echo "📥 Copying files to $BIN_DIR..."
-sudo install -m 755 "$REPO_DIR/usr:local:bin/terminal-love.sh" "$BIN_DIR/terminal-love.sh"
-sudo install -m 755 "$REPO_DIR/usr:local:bin/terminal-love-network.sh" "$BIN_DIR/terminal-love-network.sh"
+sudo install -m 755 "$REPO_DIR/usr/local/bin/terminal-love.sh" "$BIN_DIR/terminal-love.sh"
+sudo install -m 755 "$REPO_DIR/usr/local/bin/terminal-love-network.sh" "$BIN_DIR/terminal-love-network.sh"
 
 # Set up auto-run if not already present
 SHELL_NAME="$(basename "$SHELL")"
@@ -40,7 +40,7 @@ case "$SHELL_NAME" in
     ;;
 esac
 
-if [[ -n "$FILE" ]] && ! grep -q "terminal-love.sh" "$FILE"; then
+if [[ -n "$FILE" && -f "$FILE" && ! $(grep -F "terminal-love.sh" "$FILE") ]]; then
   echo "$AUTO_RUN" >> "$FILE"
   echo "✅ Added to $FILE"
 else
@@ -49,4 +49,3 @@ fi
 
 echo "🎉 Terminal Love installed successfully!"
 echo "💡 Restart your terminal to see the magic."
-
