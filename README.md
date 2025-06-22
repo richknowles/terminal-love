@@ -35,7 +35,7 @@ Double-click the signed .pkg file found in:
    ```bash
       terminal-love/terminal-love-mac/terminal-love.pkg
 
-> Note: If macOS complains about system volume write, use the manual version:
+### Note: If macOS complains about system volume write, use the manual version:
     ```bash
        sudo cp terminal-love-mac/payload/usr/local/bin/*.sh /usr/local/bin/
 
