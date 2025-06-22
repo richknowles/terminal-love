@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -f /usr/bin/terminal-love.sh /usr/bin/terminal-love-network.sh
+cp "$1/usr/local/bin/terminal-love.sh" /usr/local/bin/
+cp "$1/usr/local/bin/terminal-love-network.sh" /usr/local/bin/
+chmod +x /usr/local/bin/terminal-love*.sh
+exit 0

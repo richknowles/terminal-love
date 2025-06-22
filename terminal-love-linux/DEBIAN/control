@@ -1,0 +1,7 @@
+Package: terminal-love
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Rich Knowles <you@example.com>
+Description: Terminal Love™ splash for bash/fish on Linux
