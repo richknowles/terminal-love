@@ -14,8 +14,8 @@ sudo rm -f /usr/bin/terminal-love.sh /usr/bin/terminal-love-network.sh 2>/dev/nu
 
 # Copy new files
 echo "📥 Copying files to $BIN_DIR..."
-sudo install -m 755 "$REPO_DIR/usr/local/bin/terminal-love.sh" "$BIN_DIR/terminal-love.sh"
-sudo install -m 755 "$REPO_DIR/usr/local/bin/terminal-love-network.sh" "$BIN_DIR/terminal-love-network.sh"
+sudo install -m 755 "$REPO_DIR/terminal-love.sh" "$BIN_DIR/terminal-love.sh"
+sudo install -m 755 "$REPO_DIR/terminal-love-network.sh" "$BIN_DIR/terminal-love-network.sh"
 
 # Set up auto-run if not already present
 SHELL_NAME="$(basename "$SHELL")"
